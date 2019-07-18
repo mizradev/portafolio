@@ -7,7 +7,7 @@
 
 body{
   font-family: 'Montserrat', sans-serif;
-  background-color: #191a1d;
+  /*background-color: #191a1d;*/
 }
 
 /* HELPERS */
@@ -78,7 +78,7 @@ body{
   transition: border-bottom .5s;
 
 }
-.navbar-menus ul{
+.navbar-nav{
   display: flex;
   justify-content: space-between;
 }
@@ -182,6 +182,7 @@ clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%);
 
 .card{
   padding: 2rem;
+  height: 300px;
   transition: background .5s;
 }
 
@@ -199,4 +200,64 @@ clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%);
 
 .of-hidden{
   overflow: auto;
+}
+
+
+@media screen and (max-width: 768px){
+  .hamburger{
+    cursor: pointer;
+    position: relative;
+    top: 45%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+  }
+
+  .line{
+    width: 30px;
+    height: 4px;
+    background: white;
+    margin: 5px;
+    box-shadow: grey 0 0 10px;
+  }
+
+  .navbar{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    z-index: 4;
+    padding: 1rem;
+    background: #191a1d;
+  }
+  .navbar-brand{
+    z-index: 4;
+  }
+
+  .navbar-nav{
+    position: fixed;
+    background-color:#191a1d;
+    left:0;
+    right:0;
+    top: 7rem;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+    clip-path: circle(0 at 90% -10%);
+    -webkit-clip-path: circle(0 at 90% -10%);
+    transition: all 1s ease-out;
+  }
+  .d-flex{
+    display: block;
+    width: 100%;
+  }
+  .navbar-nav.open{
+    clip-path: circle(800px at 90% -10%);
+    -webkit-clip-path: circle(800px at 90% -10%);
+  }
+
+  .banner1{
+    padding-top: 10rem;
+    font-size:1rem;
+
+  }
 }
