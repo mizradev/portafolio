@@ -9,7 +9,7 @@
 </head>
 <body>
   <!-- nav y header -->
-    <section class="header bg-dark header-img banner-form">
+    <section class="header bg-dark header-img separador">
     <div class="container">
       <nav class="navbar">
         <a class="navbar-brand text-white" href="index.html">SOY<strong>MIZRA</strong></a>
@@ -21,16 +21,19 @@
             </div>
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="#">acerca de</a>
+                <a class="nav-link" href="index.html#acerca">acerca de</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="portafolio.html">Portafolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Servicios</a>
+                <a class="nav-link" href="index.html#servicios">Servicios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contáctame</a>
+                <a class="nav-link" href="podcast.html">Podcast</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contáctame</a>
               </li>
             </ul>
           </div>
@@ -42,13 +45,13 @@
           <h1>Jorge Mizrain Aguilar</h1>
           <p class="align-center">Desarrollador web</p>
           <div class="ctx-btn align-center">
-            <button class="btn"> < Trabajemos juntos ></button>
+            <a href="contacto.html" class="btn"> < Trabajemos juntos ></a>
           </div>
         </div>
       </div>
     </section>
   <section class="p-3">
-    <div class="container d-flex" >
+    <div id="acerca" class="container d-flex" >
       <div class="col-5 text-black">
         <h1 class="title">ACERCA DE MÍ</h1>
         <br>
@@ -65,29 +68,35 @@
     </div>
   </section>
 
-  <section class="bg-light d-flex">
-    <div class="card">
+  <section id="servicios" class="bg-light d-flex justify-content-center ">
+    <div class="card col-50">
         <div class="">
           <h3 class="title">UX/UI</h3>
           <br>
-          <p class="p-content show-text">
-            Una combinación de múltiples habilidades me permite crear diseños asombrosos que no solo se ven hermosos, sino que también se enfocan en alcanzar los objetivos comerciales de mis clientes.</p>
+          <p class="p-content">
+            Como diseñador de experiencias de usuario, puedo ayudarte en todo el proceso de creación de productos digitales. Crear diseños asombrosos que no solo se ven hermosos,
+            sino que también se enfocan en alcanzar los objetivos comerciales de mis clientes.
+          </p>
         </div>
     </div>
-    <div class="card">
-        <div class="">
+    <div class="card col-50">
+        <div>
           <h3 class="title">WEB DEVELOPER</h3>
           <br>
-          <p class="p-content show-text">
-            Una combinación de múltiples habilidades me permite crear diseños asombrosos que no solo se ven hermosos, sino que también se enfocan en alcanzar los objetivos comerciales de mis clientes.</p>
+          <p class="p-content">
+            Desarrollo plataformas Web que puedan ser visualizadas en todo tipo de dispositivos pensando siempre en la escalabilidad y demanda, haciendo responsivos y óptimos todos nuestros proyectos.
+          </p>
         </div>
     </div>
     <div class="card">
         <div class="">
-          <h3 class="title">DEVOPS</h3>
+          <h3 class="title">SPEAKER</h3>
           <br>
-          <p class="p-content show-text">
-            Una combinación de múltiples habilidades me permite crear diseños asombrosos que no solo se ven hermosos, sino que también se enfocan en alcanzar los objetivos comerciales de mis clientes.</p>
+          <p class="p-content">
+            Me gusta hablar y enseñar sobre el maravilloso mundo de la web. Desde grandes eventos y conferencias hasta pequeños encuentros y charlas de café.
+Puedo participar de forma presencial u online.
+Usualmente NO cobro dinero por hablar en público, pero tendrás que pagar mis viáticos 🧳. También puedo cotizarte cursos o talleres técnicos.
+          </p>
         </div>
     </div>
     <div class="card">
@@ -95,7 +104,9 @@
           <h3 class="title">MENTORING</h3>
           <br>
           <p class="p-content">
-            Una combinación de múltiples habilidades me permite crear diseños asombrosos que no solo se ven hermosos, sino que también se enfocan en alcanzar los objetivos comerciales de mis clientes.</p>
+              Si eres una persona u empresa que necesita desarrollar nuevas habilidades del desarrollo web, puedo ayudarte mediante un servicio personalizado
+              de mentoria one to one. (Scrum, pruebas unitarias, transformación digital, etc.)
+          </p>
         </div>
     </div>
   </section>
@@ -103,11 +114,7 @@
 
   <footer class="footer bg-dark-2 borderTop-corte">
     <div class="container p-3 text-white d-flex">
-      <div class="col-5">
-        <h3 class="title">Jorge</h3>
-      </div>
-      <div class="col-5"></div>
-    </div>
+
     <div class="container align-center p-3 text-white">
       © 2019 SoyMIZRA. All rights reserved.
     </div>

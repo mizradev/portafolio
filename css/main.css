@@ -2,7 +2,8 @@
 *{
   margin:0;
   padding:0;
-  /*border: white .2px solid;*/
+
+
 }
 
 body{
@@ -48,9 +49,18 @@ body{
 .justify-content-center{
   justify-content: center;
 }
+.justify-content-space-around{
+  justify-content: space-around;
+}
 
 .align-items-center{
   align-items: center;
+}
+
+.img-responsive{
+  width:20%;
+  margin: 1rem;
+  border-radius: 15rem;
 }
 
 .navbar{
@@ -92,9 +102,9 @@ body{
   background-color: #111;
 }
 
-.p-5{padding: 5rem 0;}
-.p-4{padding: 4rem 0;}
-.p-3{padding: 2rem 0;}
+.p-5{padding: 5rem ;}
+.p-4{padding: 4rem ;}
+.p-3{padding: 2rem;}
 .navbar-brand{
   text-decoration: none;
   line-height: 5rem;
@@ -125,7 +135,7 @@ body{
 .banner-form{
 padding-bottom: 100px;
 border-bottom: 2rem;
-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
+/*clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));*/
 }
 
 .container-img{
@@ -150,39 +160,34 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
 .btn{
   font-size: 1.5rem;
   display: inline-block;
-    padding: 15px 40px;
-    transition: all ease .6s;
-    cursor: pointer;
-    border: solid white 3px;
-    border-radius: 10px;
-    background: transparent;
-    font-weight: 700;
-    color: white;
-    font-family: 'Rubik';
-    text-transform: uppercase;
-
+  padding: 15px 40px;
+  transition: all ease .6s;
+  cursor: pointer;
+  border: solid white 3px;
+  border-radius: 10px;
+  background: transparent;
+  font-weight: 700;
+  color: white;
+  font-family: 'Rubik';
+  text-transform: uppercase;
 }
+
 .btn:hover{
   font-size: 1.8rem;
   background: #f2f2f2;
   color: #212121
 }
+
 .btn:focus{
   border: none;
 }
+
 .ctx-btn{
   height: 82px;
 }
 
-.borderTop-corte{
-  padding-top: 100px;
-background-color: #191a1d;
-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%);
-}
-
 .card{
-  padding: 2rem;
-  height: 300px;
+  padding: 1.3rem;
   transition: background .5s;
 }
 
@@ -191,15 +196,37 @@ clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%);
   background: #353b48;
   color: white ;
 }
+
 .card:hover p{
-  color: white ;
+  color: white;
 }
+
 .show-text{
   color:transparent;
 }
 
 .of-hidden{
   overflow: auto;
+}
+
+.separador{
+    overflow: hidden;
+    position: relative;
+    display: block;
+    z-index: 1;
+    padding-bottom: 10rem;
+}
+
+.separador::after, .separador::before{
+    left: -10rem;
+    position: absolute;
+    bottom: -3rem;
+    content: '';
+    background-color: white;
+    width: 150%;
+    height: 10rem;
+    transform: rotate(-3deg);
+    z-index: -1;
 }
 
 
@@ -258,6 +285,5 @@ clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%);
   .banner1{
     padding-top: 10rem;
     font-size:1rem;
-
   }
 }
